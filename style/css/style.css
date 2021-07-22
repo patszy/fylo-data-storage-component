@@ -33,7 +33,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 10%; }
+  gap: 3%; }
 
 .menu, .info {
   padding: 3rem;
@@ -55,7 +55,7 @@ main {
     background: var(--color-very-dark-blue); }
 
 .info {
-  width: 50%;
+  width: 60%;
   position: relative; }
   .info__text {
     margin-bottom: 1rem; }
@@ -67,30 +67,54 @@ main {
     gap: 1rem;
     position: absolute;
     right: 2rem;
-    top: -15%;
+    top: -25%;
     background: white;
-    padding: .5rem 1rem;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
     color: black;
     font-weight: 700;
-    font-size: 2rem; }
+    font-size: 2.5rem; }
     .info__popup::after {
       content: "";
       position: absolute;
       right: 0;
       top: 100%;
       transform: translateY(-50%);
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-right: 10px solid white; }
+      border-top: 1.2rem solid transparent;
+      border-bottom: 1.2rem solid transparent;
+      border-right: 1.2rem solid white; }
     .info__popup span {
       font-weight: 700;
       font-size: .8rem;
       text-transform: uppercase;
-      color: var(--color-grayish-blue); }
+      color: var(--color-grayish-blue);
+      letter-spacing: 1px; }
   .info__progress {
+    position: relative;
+    height: 1.4rem;
+    width: 100%;
     margin-bottom: 1rem;
-    width: 100%; }
+    padding: .2rem .3rem;
+    border-radius: 50px;
+    background: var(--color-very-dark-blue); }
+    .info__progress::before {
+      content: "";
+      width: 70%;
+      height: 1rem;
+      display: block;
+      border-radius: 50px;
+      background: linear-gradient(to right, var(--color-gradient--from), var(--color-gradient--to)); }
+    .info__progress::after {
+      content: "";
+      width: .7rem;
+      height: .7rem;
+      display: block;
+      border-radius: 50px;
+      background: var(--color-pale-blue);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 66.3%; }
   .info__levels {
     display: flex;
     justify-content: space-between;
