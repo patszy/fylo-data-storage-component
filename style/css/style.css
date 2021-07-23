@@ -5,11 +5,12 @@
   --color-pale-blue: hsl(243, 100%, 93%);
   --color-grayish-blue: hsl(229, 7%, 55%);
   --color-dark-blue: hsl(228, 56%, 26%);
-  --color-very-dark-blue: hsl(229, 57%, 11%); }
+  --color-very-dark-blue: hsl(229, 57%, 11%);
+  --font-size: 14px; }
 
 html {
   box-sizing: border-box;
-  font-size: 14px; }
+  font-size: var(--font-size); }
 
 *, *::after, *::before {
   box-sizing: inherit;
@@ -34,6 +35,17 @@ main {
   justify-content: center;
   align-items: flex-end;
   gap: 3%; }
+
+.attribution {
+  position: absolute;
+  color: wheat;
+  font-size: .8rem;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%); }
+
+.attribution a {
+  color: var(--color-grayish-blue); }
 
 .menu, .info {
   padding: 3rem;
@@ -122,17 +134,6 @@ main {
     font-weight: 700;
     font-size: .9rem; }
 
-.attribution {
-  position: absolute;
-  color: wheat;
-  font-size: .8rem;
-  bottom: 1rem;
-  left: 50%;
-  transform: translate(-50%); }
-
-.attribution a {
-  color: var(--color-grayish-blue); }
-
 @media only screen and (max-width: 900px) {
   main {
     flex-direction: column;
@@ -146,7 +147,8 @@ main {
       right: 50%;
       transform: translateX(50%);
       top: unset;
-      bottom: -25%; }
+      bottom: -25%;
+      animation: none; }
       .info__popup::after {
         display: none; } }
 

@@ -1,0 +1,33 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    background: url("../../images/bg-desktop.png") var(--color-very-dark-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    color: var(--color-pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3%;
+}
+
+.attribution {
+    position: absolute;
+    color: wheat;
+    font-size: .8rem;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.attribution a {
+    color: var(--color-grayish-blue);
+}
